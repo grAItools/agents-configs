@@ -9,12 +9,26 @@ on:
   schedule: daily
   workflow_dispatch:
 
+engine:
+  id: copilot
+  env:
+    # REQUIRED — activates BYOK mode
+    COPILOT_PROVIDER_BASE_URL: ${{ secrets.OPENCODE_BASE_URL }}
+    COPILOT_MODEL: opencode-go/kimi-k2.7-code
+    COPILOT_PROVIDER_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
+
+environment: llms
+
+network:
+  allowed:
+    - defaults
+    - cscs.ch
+    - opencode.ai
+
 permissions:
   contents: read
   issues: read
   pull-requests: read
-
-network: defaults
 
 tools:
   github:

@@ -17,7 +17,7 @@ engine:
     COPILOT_MODEL: opencode-go/kimi-k2.7-code
     COPILOT_PROVIDER_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
 
-environment: llms
+#environment: llms
 
 network:
   allowed:

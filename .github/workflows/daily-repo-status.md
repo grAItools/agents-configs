@@ -12,9 +12,9 @@ on:
 engine:
   id: copilot
   env:
-    # REQUIRED — activates BYOK mode
+    # REQUIRED — activates BYOK mode  
     COPILOT_PROVIDER_BASE_URL: ${{ secrets.OPENCODE_BASE_URL }}
-    COPILOT_MODEL: opencode-go/kimi-k2.7-code
+    COPILOT_MODEL: kimi-k2.6
     COPILOT_PROVIDER_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
 
 #environment: llms

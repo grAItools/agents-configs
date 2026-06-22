@@ -9,7 +9,7 @@ engine:
   env:
     # REQUIRED — activates BYOK mode  
     COPILOT_PROVIDER_BASE_URL: ${{ secrets.OPENCODE_BASE_URL }}
-    COPILOT_MODEL: kimi-k2.6
+    COPILOT_MODEL: glm-5.1
     COPILOT_PROVIDER_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
 
 #environment: llms
